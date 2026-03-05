@@ -1,4 +1,5 @@
 ﻿using CSharp_10_in_a_Nutshell.CP3.Indexers;
+using CSharp_10_in_a_Nutshell.CP3.StaticConstructors;
 
 class Program
 {
@@ -26,6 +27,22 @@ class Program
         #endregion
         #endregion
 
+        #region Static-Constructors
+
+        #region Ex-1
+        //Console.WriteLine(Foo.x);
+        #endregion
+
+        #region Ex-2
+        // // Reading config file from hard drive...
+        // // AppConfig is ready!
+        // AppConfig.PrintStatus();
+
+        // // AppConfig is ready!
+        // AppConfig.PrintStatus();
+        #endregion
+
+        #endregion
 
         #endregion
     }
