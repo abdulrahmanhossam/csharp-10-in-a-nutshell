@@ -1,6 +1,7 @@
 ﻿using CSharp_10_in_a_Nutshell.CP3.Indexers;
 using CSharp_10_in_a_Nutshell.CP3.InheritanceAndPolymorphism;
 using CSharp_10_in_a_Nutshell.CP3.StaticConstructors;
+using CSharp_10_in_a_Nutshell.CP3.VirtualFunctionMembers;
 
 class Program
 {
@@ -57,6 +58,25 @@ class Program
 
         // mySavings.Deposit(1000);
         // PrintBalance(mySavings);
+        #endregion
+
+        #endregion
+
+        #region VirtualFunctionMembers
+
+        #region Ex-1
+        // House mansion = new House { Name = "McMansion", Mortgage = 250000 };
+        // CSharp_10_in_a_Nutshell.CP3.VirtualFunctionMembers.Asset a = mansion; // (Upcast)
+
+        // Console.WriteLine(mansion.Liability); // 250000
+        // Console.WriteLine(a.Liability);       // 250000
+        #endregion
+
+        #region Ex-2
+        // EmailValidator validator = new StringValidator(); // (Upcast)
+
+        // bool isValid = validator.Validate("hello");
+        // Console.WriteLine(isValid);
         #endregion
 
         #endregion
