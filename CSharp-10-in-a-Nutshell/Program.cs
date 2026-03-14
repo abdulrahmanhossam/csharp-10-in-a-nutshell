@@ -1,4 +1,5 @@
-﻿using CSharp_10_in_a_Nutshell.CP3.Indexers;
+﻿using CSharp_10_in_a_Nutshell.CP3.HidingInheritedMembers;
+using CSharp_10_in_a_Nutshell.CP3.Indexers;
 using CSharp_10_in_a_Nutshell.CP3.InheritanceAndPolymorphism;
 using CSharp_10_in_a_Nutshell.CP3.StaticConstructors;
 using CSharp_10_in_a_Nutshell.CP3.VirtualFunctionMembers;
@@ -77,6 +78,31 @@ class Program
 
         // bool isValid = validator.Validate("hello");
         // Console.WriteLine(isValid);
+        #endregion
+
+        #endregion
+
+        #region HidingInheritedMembers
+
+        #region Ex-1
+        // B b = new B();
+        // A a = b;
+
+        // Console.WriteLine(b.Counter);
+        // Console.WriteLine(a.Counter);
+        #endregion
+
+        #region Ex-2
+        // ModernLogger myLogger = new ModernLogger();
+        // myLogger.LogErr("System Crash"); // MODERN LOG
+
+        // // OldLogger (Upcast)
+        // // if we use (override) here can use (OldLogger log = new ModernLogger())
+        // // and use the method off ModernLogger
+        // // if we use (new) can not use (OldLogger log = new ModernLogger())
+        // // if use the  LogErr method we will use OldLogger
+        // OldLogger legacyRef = myLogger;
+        // legacyRef.LogErr("System Crash");
         #endregion
 
         #endregion
