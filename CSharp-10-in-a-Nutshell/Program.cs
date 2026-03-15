@@ -107,6 +107,24 @@ class Program
 
         #endregion
 
+        #region BoxingAndUnboxing
+
+        #region Ex-1
+        // int x = 9;
+        // object obj = x; // here we make boxing form (val) to (ref)
+        // int y = (int)obj; // here we make unboxing form (ref) to (val)
+        #endregion
+
+        #region Ex-2
+        // int i = 3;
+        // // boxing just take a copy from i = 3
+        // object boxed = i; // now whe have here (3) after boxing
+        // i = 5;   // if we change the (i) after boxing the (boxed varible) will not be change
+        // Console.WriteLine(boxed); // here will print (3) cuse its the val of (boxed)
+        #endregion
+
+        #endregion
+
         #endregion
     }
 
