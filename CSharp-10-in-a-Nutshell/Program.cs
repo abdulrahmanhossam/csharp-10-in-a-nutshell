@@ -3,6 +3,7 @@ using CSharp_10_in_a_Nutshell.CP3.Indexers;
 using CSharp_10_in_a_Nutshell.CP3.InheritanceAndPolymorphism;
 using CSharp_10_in_a_Nutshell.CP3.StaticConstructors;
 using CSharp_10_in_a_Nutshell.CP3.VirtualFunctionMembers;
+using CSharp_10_in_a_Nutshell.CP3.GetTypeAndTypeofAndToString;
 
 class Program
 {
@@ -124,6 +125,32 @@ class Program
         #endregion
 
         #endregion
+
+        #region GetTypeAndTypeofAndToString
+
+        #region Ex-1
+        // Point p = new Point();
+        // Console.WriteLine(p.GetType().Name);
+        // Console.WriteLine(typeof(Point).Name);
+
+        // Console.WriteLine(p.GetType() == typeof(Point));
+        #endregion
+
+        #region Ex-2
+        // Panda p = new Panda { Name = "Petey" };
+        // Console.WriteLine(p);
+        #endregion
+
+        #region Ex-3
+        // Transaction t1 = new Deposit { Amount = 1500 };
+        // Transaction t2 = new Withdrawal { Amount = 200 };
+
+        // Console.WriteLine(t1);
+        // Console.WriteLine(t2);
+        #endregion
+
+        #endregion
+
 
         #endregion
     }
