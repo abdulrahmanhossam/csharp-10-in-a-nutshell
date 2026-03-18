@@ -151,6 +151,19 @@ class Program
 
         #endregion
 
+        #region Structs
+
+        #region Ex-1
+        // var p1 = new CSharp_10_in_a_Nutshell.CP3.Structs.Point();
+        // p1.X = 7;
+
+        // var p2 = p1;
+        // p2.X = 9;
+
+        // Console.WriteLine(p1.X);
+        #endregion
+
+        #endregion
 
         #endregion
     }
