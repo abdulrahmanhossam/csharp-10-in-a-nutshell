@@ -4,6 +4,7 @@ using CSharp_10_in_a_Nutshell.CP3.InheritanceAndPolymorphism;
 using CSharp_10_in_a_Nutshell.CP3.StaticConstructors;
 using CSharp_10_in_a_Nutshell.CP3.VirtualFunctionMembers;
 using CSharp_10_in_a_Nutshell.CP3.GetTypeAndTypeofAndToString;
+using CSharp_10_in_a_Nutshell.CP3.Interfaces;
 
 class Program
 {
@@ -161,6 +162,20 @@ class Program
         // p2.X = 9;
 
         // Console.WriteLine(p1.X);
+        #endregion
+
+        #endregion
+
+        #region Interfaces
+
+        #region Ex-1
+        // var checkout = new CheckoutSystem();
+
+        // // Customer choose visa
+        // checkout.Checkout(new VisaProcessor(), 100);
+
+        // // Customer choose paypal
+        // checkout.Checkout(new PayPalProcessor(), 50);
         #endregion
 
         #endregion
