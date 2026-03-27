@@ -5,6 +5,7 @@ using CSharp_10_in_a_Nutshell.CP3.StaticConstructors;
 using CSharp_10_in_a_Nutshell.CP3.VirtualFunctionMembers;
 using CSharp_10_in_a_Nutshell.CP3.GetTypeAndTypeofAndToString;
 using CSharp_10_in_a_Nutshell.CP3.Interfaces;
+using CSharp_10_in_a_Nutshell.CP3.ExplicitInterfaceImplementation;
 
 class Program
 {
@@ -176,6 +177,23 @@ class Program
 
         // // Customer choose paypal
         // checkout.Checkout(new PayPalProcessor(), 50);
+        #endregion
+
+        #endregion
+
+        #region ExplicitInterfaceImplementation
+
+        #region Ex-1
+
+        // ReportDocument myReport = new ReportDocument();
+
+        // // myReport.Save(); // must make cast to do this
+
+        // IDatabaseStorable dbDoc = myReport;
+        // dbDoc.Save(); // SQL
+
+        // IPrintable printDoc = myReport;
+        // printDoc.Save(); // PDF
         #endregion
 
         #endregion
