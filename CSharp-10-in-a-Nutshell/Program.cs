@@ -6,6 +6,7 @@ using CSharp_10_in_a_Nutshell.CP3.VirtualFunctionMembers;
 using CSharp_10_in_a_Nutshell.CP3.GetTypeAndTypeofAndToString;
 using CSharp_10_in_a_Nutshell.CP3.Interfaces;
 using CSharp_10_in_a_Nutshell.CP3.ExplicitInterfaceImplementation;
+using CSharp_10_in_a_Nutshell.CP3.GenericConstraints.BackendCase;
 
 class Program
 {
@@ -194,6 +195,16 @@ class Program
 
         // IPrintable printDoc = myReport;
         // printDoc.Save(); // PDF
+        #endregion
+
+        #endregion
+
+        #region GenericConstraints
+
+        #region Ex-1
+        // var userRepo = new GenericRepository<User>();
+        // User u = userRepo.CreateNewRecord();
+        // userRepo.SaveToDatabase(u);
         #endregion
 
         #endregion
