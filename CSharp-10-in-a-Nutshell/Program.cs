@@ -7,9 +7,30 @@ using CSharp_10_in_a_Nutshell.CP3.GetTypeAndTypeofAndToString;
 using CSharp_10_in_a_Nutshell.CP3.Interfaces;
 using CSharp_10_in_a_Nutshell.CP3.ExplicitInterfaceImplementation;
 using CSharp_10_in_a_Nutshell.CP3.GenericConstraints.BackendCase;
+using CSharp_10_in_a_Nutshell;
 
 class Program
 {
+    #region Delagate
+
+    #region Ex-1
+    delegate int Transformer(int x);
+
+    static int Square(int x)
+    {
+        return x * x;
+    }
+    #endregion
+
+    #region Ex-2
+    static void LogToConsole(string msg)
+        => Console.WriteLine($"[CONSOLE]: {msg}");
+
+    static void LogToFile(string msg)
+        => File.WriteAllText("log.txt", msg);
+    #endregion
+    #endregion
+
     static void Main(string[] args)
     {
         #region CP3
@@ -205,6 +226,24 @@ class Program
         // var userRepo = new GenericRepository<User>();
         // User u = userRepo.CreateNewRecord();
         // userRepo.SaveToDatabase(u);
+        #endregion
+
+        #endregion
+
+        #region Delagate-Excu
+
+        #region Ex-1
+        // Transformer t = Square;
+        // // This will call (delagate) and he will (Square) method
+        // int result = t(3);
+        // Console.WriteLine(result);
+        #endregion
+
+        #region Ex-2
+        // var manager = new SystemManager();
+
+        // manager.ProcessData(LogToConsole);
+        // manager.ProcessData(LogToConsole);
         #endregion
 
         #endregion
