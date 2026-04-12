@@ -7,7 +7,7 @@ using CSharp_10_in_a_Nutshell.CP3.GetTypeAndTypeofAndToString;
 using CSharp_10_in_a_Nutshell.CP3.Interfaces;
 using CSharp_10_in_a_Nutshell.CP3.ExplicitInterfaceImplementation;
 using CSharp_10_in_a_Nutshell.CP3.GenericConstraints.BackendCase;
-using CSharp_10_in_a_Nutshell;
+using CSharp_10_in_a_Nutshell.CP4.Delegate;
 
 class Program
 {

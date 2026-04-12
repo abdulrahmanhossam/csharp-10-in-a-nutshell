@@ -1,4 +1,4 @@
-namespace CSharp_10_in_a_Nutshell;
+namespace CSharp_10_in_a_Nutshell.CP4.Delegate;
 
 public delegate void LogAction(string message);
 public class SystemManager
