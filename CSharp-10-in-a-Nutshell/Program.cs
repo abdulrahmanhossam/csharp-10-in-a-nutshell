@@ -8,6 +8,8 @@ using CSharp_10_in_a_Nutshell.CP3.Interfaces;
 using CSharp_10_in_a_Nutshell.CP3.ExplicitInterfaceImplementation;
 using CSharp_10_in_a_Nutshell.CP3.GenericConstraints.BackendCase;
 using CSharp_10_in_a_Nutshell.CP4.Delegate;
+using CSharp_10_in_a_Nutshell.CP4.MulticastDelegates;
+using CheckoutSystem = CSharp_10_in_a_Nutshell.CP4.MulticastDelegates.CheckoutSystem;
 
 class Program
 {
@@ -230,7 +232,7 @@ class Program
 
         #endregion
 
-        #region Delagate-Excu
+        #region Delagate-Exce
 
         #region Ex-1
         // Transformer t = Square;
@@ -248,8 +250,54 @@ class Program
 
         #endregion
 
+        #region MulticastDelegates-Exce
+
+        #region  Ex-1
+        // ProgressReporter progress = WriteProgressToConsole;
+        // progress += WriteProgressToFile;
+
+        // // we here just send the deegate thats
+        // // contains some of pointers to metheods we are added
+        // // he will sort exce by adding 
+        // Util.HardWork(progress);
+        #endregion
+
+        #region  Ex-2
+        // CheckoutSystem checkout = new CheckoutSystem();
+
+        // checkout.OnOrderComplete += SendEmail;
+        // checkout.OnOrderComplete += SendSMS;
+        // checkout.OnOrderComplete += LogToDatabase;
+
+        // checkout.ProcessPaymet("ORD-12345");
+        #endregion
+
+        #endregion
+
         #endregion
     }
+
+
+    #region MulticastDelegates
+
+    #region Ex-1
+    static void WriteProgressToConsole(int p)
+        => Console.WriteLine(p);
+    static void WriteProgressToFile(int p)
+        => File.WriteAllText("progress.txt", p.ToString());
+    #endregion
+
+    #region Ex-2
+
+    static void SendEmail(string id)
+         => Console.WriteLine($"-> Email sent for {id}");
+    static void SendSMS(string id)
+        => Console.WriteLine($"-> SMS sent for {id}");
+    static void LogToDatabase(string id)
+        => Console.WriteLine($"-> Saved to DB: {id}");
+    #endregion
+
+    #endregion
 
     static void PrintBalance(BankAccount account)
     {
