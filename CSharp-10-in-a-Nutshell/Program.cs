@@ -10,6 +10,7 @@ using CSharp_10_in_a_Nutshell.CP3.GenericConstraints.BackendCase;
 using CSharp_10_in_a_Nutshell.CP4.Delegate;
 using CSharp_10_in_a_Nutshell.CP4.MulticastDelegates;
 using CheckoutSystem = CSharp_10_in_a_Nutshell.CP4.MulticastDelegates.CheckoutSystem;
+using CSharp_10_in_a_Nutshell.CP4.GenericDelegatesAndFuncAndAction;
 
 class Program
 {
@@ -274,9 +275,25 @@ class Program
 
         #endregion
 
+        #region GenericDelegatesAndFuncAndAction-Exce
+
+        #region  Ex-1
+        // Test.ExceuteTask(10, 5, Add, PrintToScreen);
+        #endregion
+
+        #endregion
+
         #endregion
     }
 
+    #region GenericDelegatesAndFuncAndAction
+
+    #region  Ex-1
+    static int Add(int x, int y) => x + y;
+    static void PrintToScreen(string msg) => Console.WriteLine($"[LOG]: {msg}");
+    #endregion
+
+    #endregion
 
     #region MulticastDelegates
 
