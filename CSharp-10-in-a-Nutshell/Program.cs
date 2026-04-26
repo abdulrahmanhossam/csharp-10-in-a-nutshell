@@ -11,6 +11,7 @@ using CSharp_10_in_a_Nutshell.CP4.Delegate;
 using CSharp_10_in_a_Nutshell.CP4.MulticastDelegates;
 using CheckoutSystem = CSharp_10_in_a_Nutshell.CP4.MulticastDelegates.CheckoutSystem;
 using CSharp_10_in_a_Nutshell.CP4.GenericDelegatesAndFuncAndAction;
+using CSharp_10_in_a_Nutshell.CP4.Events.YouTubeChannel;
 
 class Program
 {
@@ -283,6 +284,27 @@ class Program
 
         #region  Ex-1
         // Test.ExceuteTask(10, 5, Add, PrintToScreen);
+        #endregion
+
+        #endregion
+
+        #region Events
+
+        #region  Ex-1
+
+        // YouTubeChannel channel = new YouTubeChannel();
+        // Subscriber sub1 = new Subscriber();
+        // Subscriber sub2 = new Subscriber();
+
+        // -> notify subscriberies that added to event
+        // channel.OnVideoUploaded += sub1.WatchVideo;
+        // channel.OnVideoUploaded += sub2.WatchVideo;
+
+        // ->  not vaild see errors 
+        // channel.OnVideoUploaded = sub1.WatchVideo;
+        // channel.OnVideoUploaded = null; 
+        // channel.OnVideoUploaded("Fake Video!");
+
         #endregion
 
         #endregion
